@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title> Ikshana Architects</title>
-     <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikshana Architects</title>
+  <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;                       /* no white border */
+      padding: 50px;
+      background-color:lightblue;       /* light blue background */
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .content {
+      flex: 1;
       text-align: center;
-      margin: 50px;
     }
+
     h1 {
-      color: darkblue;
+      color: black;
     }
+
     button {
       padding: 10px 20px;
       margin-top: 20px;
@@ -23,17 +37,31 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
     button:hover {
       background: navy;
     }
+
+    .instagram {
+      flex: 1;
+    }
   </style>
 </head>
-<body >
-    <b>||Shree Ganeshay Namh|| </b>
-    <h1>Welcome to our Ikshana Architects Page</h1>
-    <p> we build the dreams of House <p>
-    <button onclick="alert('Hello! Thanks for clicking!')">Click Me</button>    
+<body>
+  <div class="container">
+    <div class="content">
+      <b>||Shree Ganeshay Namh||</b>
+      <h1>Welcome to our Ikshana Architects Page</h1>
+      <p>We build the dreams of House</p>
+      <button onclick="alert('Hello! Thanks for clicking!')">Click Me</button>
+    </div>
+
+    <div class="instagram">
+      <blockquote class="instagram-media" 
+        data-instgrm-permalink="https://www.instagram.com/p/DL3Bw2jTvkd/"
+        data-instgrm-version="14"></blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div>
+  </div>
 </body>
-<link rel="Ikshana" href="Ikshana.css">
-<script rel="Ikshana" href="Ikshana.js"></script>
 </html>
