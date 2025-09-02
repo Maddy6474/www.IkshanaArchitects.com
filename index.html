@@ -7,9 +7,15 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;                       /* no white border */
+      margin: 0;
       padding: 50px;
-      background-color:lightblue;       /* light blue background */
+
+      /* Background image added */
+      background-image: url('Ikshana magzine Image.jpg'); /* replace with your image file */
+      background-size: cover;   /* makes image cover full screen */
+      background-position: center; /* keeps image centered */
+      background-repeat: no-repeat; /* prevents repeating */
+      background-attachment: fixed; /* keeps image fixed while scrolling */
     }
 
     .container {
@@ -17,6 +23,9 @@
       justify-content: space-around;
       align-items: flex-start;
       gap: 20px;
+      background: rgba(255, 255, 255, 0.7); /* optional white overlay for readability */
+      padding: 20px;
+      border-radius: 10px;
     }
 
     .content {
